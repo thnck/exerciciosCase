@@ -8,7 +8,7 @@ public class Ex02 {
 		//variaveis
 		char opcao;
 		double preco = 0;
-		double novopreco = 0;
+		double npreco = 0;
 		int quantidade;
 		
 		//menu
@@ -44,11 +44,13 @@ public class Ex02 {
 			
 		//promocao
 		} if (quantidade>=3) {
-			novopreco = preco - (preco * 10/100);
+			npreco = preco - (preco * 10/100);
+		} else {
+			npreco = preco;
 		}
 		
 		//total
-		System.out.println("TOTAL DA COMPRA: R$" + novopreco );
+		System.out.println("TOTAL DA COMPRA: R$" + npreco );
 		borabill.close();
 	}
 }
